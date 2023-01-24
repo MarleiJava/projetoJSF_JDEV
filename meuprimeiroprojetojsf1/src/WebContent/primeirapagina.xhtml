@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h = "http://java.sun.com/jsf/html">
+	
+<h:head>
+<title>Olá jsf</title>
+</h:head>
+
+<h:body>
+
+	<h:form id="fomrPessoa">
+	
+		<h:outputText value="teste jsf"/>
+	Nome: 
+	   <h:inputText id = "campoNome" value ="#{pessoaBean.nome}"/>
+	   <br/>
+	   Sobrenome: 
+	   <h:inputText id = "campoSobrenome" value ="#{pessoaBean.sobrenome}"/>
+	   <br/>
+	   
+	
+		<h:commandButton value ="Mostrar Nome" action="#{pessoaBean.mostrarNome()}"/>
+		<br/>
+	
+	
+	
+	</h:form>
+
+
+
+
+</h:body>
+
+</html>
